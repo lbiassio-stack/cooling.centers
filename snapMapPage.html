@@ -2,11 +2,9 @@
 <html>
 
 <head>
-    <title>SNAP Benefits Map</title>
-
+    <title>Cooling Center Vulnerability Map</title>
 
     <link rel="stylesheet" href="css/template.css">
-
 
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.js"></script>
@@ -20,12 +18,12 @@
             border: 1px solid #ccc;
         }
 
-
         .description-box {
             margin-top: 20px;
             font-size: 16px;
             line-height: 1.6;
         }
+
     </style>
 </head>
 
@@ -34,9 +32,9 @@
     <!-- Navigation bar -->
     <div class="topnav" id="myTopnav">
         <a href="index.html">Overview</a>
-        <a class="active" a href="snapMapPage.html">SNAP Benefits Map</a>
-        <a href="nearestFalicityPage.html">Nearest Food Facility</a>
-        <a href="whatsNowPage.html">What now?</a>
+        <a class="active" href="snapMapPage.html">Heat Vulnerability Map</a>
+        <a href="nearestFalicityPage.html">Find Nearest Cooling Center</a>
+        <a href="whatsNowPage.html">Cooling Access Analysis</a>
         <a href="references.html">References</a>
 
         <a href="javascript:void(0);" class="icon">
@@ -47,19 +45,25 @@
     <!-- Page content -->
     <div class="content">
 
-        <h2>SNAP Benefits Map</h2>
+        <h2>Heat Vulnerability Map</h2>
 
-        <!-- Map from snapMap.html is embedded here -->
+        <!-- Map iframe stays the same for now -->
         <iframe src="snapMap.html" class="map-container"></iframe>
 
-        <!-- Description placeholder -->
+        <!-- Description -->
         <div class="description-box">
-        Here, you can visualize the household participation in the Supplemental Nutrition Assistance Program (SNAP) using
-        county level data from the U.S Census Bureau. Each county is shaded based on the number of households receiving
-         SNAP benefits. When hovering over a county, users are able to see the exact number of households enrolled in
-         SNAP for that area. Clicking on a specific county reveals additional stats by showing food access data including
-          the percentage of the county's population living more than 0.5 miles, 1 mile, 10 miles, and 20 miles of a food
-          source, helping users understand how SNAP participation and food accessibility intersect.
+
+        This interactive map explores spatial patterns of heat vulnerability and potential access to cooling resources. 
+        The visualization highlights geographic areas where residents may face greater risks during extreme heat events 
+        due to demographic, socioeconomic, or environmental factors.
+
+        By interacting with the map, users can hover over areas to see additional information about local conditions 
+        and indicators related to heat exposure and community vulnerability. Clicking on a location reveals more 
+        detailed statistics that help contextualize which populations may be most affected by extreme heat.
+
+        Understanding where vulnerable populations live relative to cooling infrastructure can help planners and 
+        public agencies identify neighborhoods that may benefit from additional cooling centers, outreach, or 
+        climate adaptation strategies.
 
         </div>
 
