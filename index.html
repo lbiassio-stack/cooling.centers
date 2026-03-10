@@ -1,72 +1,100 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
-    <title>Cooling centers in Seattle</title>
+    <title>Cooling Center Accessibility in Seattle</title>
 
-    <link rel="stylesheet" href="css/template.css">
-    <link rel="icon" href="assets/img/favicon.png">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+```
+<link rel="stylesheet" href="css/template.css">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+```
+
 </head>
 
 <body>
 
-    <div class="topnav" id="myTopnav">
-        <a class="active" href="index.html">Overview</a>
-        <a href="snapMapPage.html">SNAP Benefits Map</a>
-        <a href="nearestFalicityPage.html">Nearest Food Facility</a>
-        <a href="whatsNowPage.html">What now?</a>
-        <a href="references.html">References</a>
+```
+<div class="topnav" id="myTopnav">
+    <a class="active" href="index.html">Overview</a>
+    <a href="snapMapPage.html">Cooling Vulnerability Map</a>
+    <a href="nearestFalicityPage.html">Find the Nearest Cooling Center</a>
+    <a href="whatsNowPage.html">Implications</a>
+    <a href="references.html">References</a>
 
-        <a href="javascript:void(0);" class="icon">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
+    <a href="javascript:void(0);" class="icon">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
 
-    <div class="content">
+<div class="content">
 
-        <h1>Food Access in Washington State</h1>
+    <h1>Cooling Center Accessibility in Seattle</h1>
 
-        <img src="assets/img/foodAccess.jpg" alt="Food Access Overview" style="max-width: 60%; height: auto;" />
+    <img src="assets/img/foodAccess.jpg" alt="Cooling centers overview" style="max-width: 60%; height: auto;" />
 
-        <p>
+    <p>
+    Extreme heat events are becoming more frequent and intense as climate change progresses, creating
+    increasing public health risks in cities. Cooling centers—publicly accessible, air-conditioned
+    buildings—play a critical role in protecting residents during extreme heat. However, there is
+    currently no centralized, up-to-date spatial resource that helps Seattle residents identify
+    buildings they can access during extreme temperature events.
+    </p>
 
-        Curious about food access data in WA state? This website is an interactive tool that helps
-        people get a better idea on what this looks like.
+    <p>
+    This project investigates the availability of buildings that could function as cooling centers
+    during extreme weather events in Seattle. Potential cooling facilities include libraries,
+    community centers, public schools, and other public buildings where residents may be able to
+    seek relief during heat waves. By mapping these locations across the city, the project aims to
+    better understand the spatial distribution of cooling infrastructure.
+    </p>
 
-        </p>
+    <p>
+    The website includes an interactive map that allows users to explore cooling center locations
+    and evaluate their accessibility. Users can enter an address or select a location on the map to
+    estimate the distance to the nearest cooling facility. In this pilot project, accessibility is
+    operationalized using Euclidean distance between locations, recognizing that transportation
+    systems may be disrupted during extreme weather conditions.
+    </p>
 
-        <p>
-        Food deserts are an important concept to understand equality issues, but one that isn't yet widely known,
-        especially by the people who might be affected by it. In Washington, food deserts are concentrated in
-        low-income urban and rural areas, such as parts of South Seattle, Yakima, and Spokane. They are areas where
-        residents have limited access to affordable, nutritious food, which has a direct negative impact on their
-        health and quality of life. These disparities are often linked to transportation barriers, systemic inequities,
-        and a lack of nearby grocery stores or fresh-produce markets. If you're a WA resident who doesn't know much
-        about this concept or are curious about what patterns within this theme exist close to you, you're in the right place.
-        </p>
+    <p>
+    In addition to facility locations, the project compares the distribution of cooling centers
+    with demographic and socioeconomic characteristics across Seattle. Overlay maps include
+    population density, income levels, and racial demographics in order to identify potential
+    inequities in access to cooling resources.
+    </p>
 
-        <p>
-        Browse to learn more about supply limitations and SNAP benefits, which are an example of a solution to remediate this scenario.
-        You can look up an address or selected point's distance to the nearest grocery store on the Closest Grocery Store page,
-        and then use these finds to analyze the number of households enrolled on SNAP benefits in each county on Snap Benefits.
-        Hopefully, this will raise awareness that this lack of access isn't a coincidence – there are spatial motifs that can
-        be addressed.
-        </p>
+    <p>
+    The spatial database used for this project integrates multiple GIS datasets. Facility data
+    includes Seattle Parks and Recreation community centers, pools, spray parks, wading pools,
+    lifeguard beaches, public libraries, senior centers, homeless shelters, and major public
+    facilities. Most datasets are sourced from the City of Seattle’s open GIS portals, while
+    additional facilities are manually identified where official datasets are unavailable.
+    </p>
 
-        <p>Our data was retrieved from:</p>
-        <ul>
-            <li>USDA Food Access Research Atlas</li>
-            <li>Washington State 2025 Census</li>
-            <li>U.S. Census Bureau SNAP Data</li>
-        </ul>
+    <p>
+    Demographic characteristics are incorporated using American Community Survey data at the
+    census tract level, including population, race, and income indicators. Transit accessibility
+    is represented using route and stop data from regional transit datasets provided by
+    King County, allowing analysis of proximity to frequent transit near potential cooling centers.
+    </p>
 
+    <p>
+    The results of this project will produce a series of “Cooling Vulnerability Maps” that highlight
+    neighborhoods where socially vulnerable populations overlap with limited access to cooling
+    facilities. By identifying these potential “cooling deserts,” the project can help inform
+    climate resilience planning in Seattle and support decisions about where to deploy mobile
+    cooling units or expand access to existing facilities.
+    </p>
 
-    </div>
+</div>
 
-    <script src="js/template.js"></script>
+<script src="js/template.js"></script>
+```
 
 </body>
 
 </html>
+
